@@ -8,7 +8,6 @@ import kr.co.ch02.sub2.Computer;
 import kr.co.ch02.sub3.Service;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /*
     날짜 : 2025/09/15
