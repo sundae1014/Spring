@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user7::modify</title>
+</head>
+<body>
+    <h3>user7 수정</h3>
+
+    <a th:href="@{/}">처음</a>
+    <a th:href="@{/user7/list}">목록</a>
+
+    <form th:action="@{/user7/modify}" method="post">
+        <table border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="uid" readonly th:value="${user7DTO.user_id}"/></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" th:value="${user7DTO.name}"/></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="date" name="birth" th:value="${user7DTO.birth}"/></td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td><input type="number" name="age" th:value="${user7DTO.age}"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="수정하기"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
