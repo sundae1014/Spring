@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>user7::list</title>
+    <title>user1::list</title>
 </head>
 <body>
-    <h3>user7 목록</h3>
+    <h3>user1 목록</h3>
 
     <a th:href="@{/}">처음</a>
-    <a th:href="@{/user7/register}">등록</a>
+    <a th:href="@{/user1/register}">등록</a>
 
     <table border="1">
         <tr>
@@ -24,8 +24,8 @@
             <td th:text="${user.birth}"></td>
             <td th:text="${user.age}"></td>
             <td>
-                <a th:href="@{/user7/modify(user_id=${user.user_id})}">수정</a>
-                <a th:href="@{/user7/delete(user_id=${user.user_id})}">삭제</a>
+                <a th:href="@{/user1/modify(user_id=${user.user_id})}">수정</a>
+                <a th:href="@{/user1/delete(user_id=${user.user_id})}">삭제</a>
             </td>
         </tr>
     </table>

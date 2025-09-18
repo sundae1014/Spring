@@ -1,6 +1,5 @@
 package kr.co.ch05.mapper;
 
-import kr.co.ch05.dto.User1DTO;
 import kr.co.ch05.dto.User2DTO;
 import org.apache.ibatis.annotations.Mapper;
 
